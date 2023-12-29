@@ -235,11 +235,21 @@
 </li>
 </ol>
 <h2 id="5-撰写文章并发布"><a href="#5-撰写文章并发布" class="headerlink" title="5. 撰写文章并发布"></a>5. 撰写文章并发布</h2><ol>
-<li>需要安装上传工具<ol>
+<li><p>先打开目录下的_config.yml文件</p>
+<ol>
+<li>ctrl+f搜索关键字deploy</li>
+<li>将deploy部分替换为</li>
+</ol>
+ <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:用户名/用户名.github.io.git    #这个是使用ssh的格式</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>需要安装上传工具</p>
+<ol>
 <li>在gitbash中输入命令 <em><strong>cnpm install hexo-deployer-git</strong></em></li>
+<li>需要在文件的根目录下运行命令</li>
 </ol>
 </li>
-<li>在hexo中创建文章(md格式)<ol>
+<li><p>在hexo中创建文章(md格式)</p>
+<ol>
 <li>在hexo中写博客是要浅学以下markdown的喔，一天基本就能学会了</li>
 <li>写markdown的文章我是直接使用vscode，网上教程看一下就好</li>
 <li>使用hexo new命令创建新文章<ol>
@@ -248,13 +258,15 @@
 </li>
 </ol>
 </li>
-<li>进行文章编写后预览<ol>
+<li><p>进行文章编写后预览</p>
+<ol>
 <li>vscode中文章编写完成后ctrl+s保存</li>
 <li>在git bash中输入命令(在哪都可以)<em><strong>hexo s</strong></em>或者<em><strong>hexo server</strong></em>(上文有提到过)</li>
 <li>会返回一个本机网址，进入网址即可看到自己的博客界面(默认主题未上传)</li>
 </ol>
 </li>
-<li>将文章上传至github上<ol>
+<li><p>将文章上传至github上</p>
+<ol>
 <li>输入命令<em><strong>hexo g</strong></em>先生成静态文件再<em><strong>hexo d</strong></em>部署到github上</li>
 <li>再次访问个人网站即会出现你所作的更改啦</li>
 </ol>
