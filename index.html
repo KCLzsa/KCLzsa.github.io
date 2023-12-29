@@ -287,10 +287,14 @@
 <h2 id="5-撰写文章并发布"><a href="#5-撰写文章并发布" class="headerlink" title="5. 撰写文章并发布"></a>5. 撰写文章并发布</h2><ol>
 <li><p>先打开目录下的_config.yml文件</p>
 <ol>
-<li>ctrl+f搜索关键字deploy</li>
-<li>将deploy部分替换为</li>
+<li><p>ctrl+f搜索关键字deploy</p>
+</li>
+<li><p>将deploy部分替换为</p>
+<blockquote>
+<p>deploy:<br>   type: git<br>   repo: <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;</a>:用户名&#x2F;用户名.github.io.git    #这个是使用ssh的格式<br> branch: main</p>
+</blockquote>
+</li>
 </ol>
- <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:用户名/用户名.github.io.git    #这个是使用ssh的格式</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>需要安装上传工具</p>
 <ol>
